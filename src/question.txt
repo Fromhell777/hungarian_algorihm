@@ -1,0 +1,81 @@
+Vluchten - categorie 4
+
+Je werkt als planner voor een vliegtuigmaatschappij. Deze maatschappij heeft een
+aantal vluchten vastgelegd en kent ook het aantal passagiers per vlucht, maar
+niet het vliegtuig dat de vlucht zal uitvoeren. Het is nu jouw taak om
+vliegtuigen aan deze vluchten toe te wijzen. Om je taak uit te voeren beschik je
+over 2 lijsten met gegevens:
+
+• de uit te voeren vluchten met per vlucht de te overbruggen afstand en het
+aantal passagiers
+
+• de beschikbare vliegtuigen met per vliegtuig de maximale afstand die het kan
+vliegen en het maximum aantal passagiers dat het kan vervoeren.  Opgave
+
+Om je bij je job te helpen, schrijf je een programma dat vliegtuigen aan
+vluchten toewijst zodat de totale kost voor de maatschappij zo klein mogelijk
+is. Veel lege plaatsen op een lange vlucht is namelijk veel duurder dan evenveel
+lege plaatsen op een korte vlucht.
+
+Om de optimale oplossing te bepalen, wordt er enkel met de lege plaatsen
+rekening gehouden en met de afstand die deze lege plaatsen afleggen: de extra
+kost om alle vluchten uit te voeren wordt berekend door voor alle vluchten de
+afstand te vermenigvuldigen met het aantal lege plaatsen en deze getallen op te
+tellen. Die moet minimaal zijn.
+
+Invoer
+
+De eerste regel van de invoer bevat een geheel getal 1 ≤ n ≤ 1000 dat het aantal
+testgevallen aangeeft. Per geval volgen dan een aantal regels met informatie: op
+de eerste regel staat het aantal vluchten f (1 ≤ f ≤ 100) dat uitgevoerd moet
+worden en het aantal vliegtuigen p (1 ≤ p ≤ 100) dat daarvoor beschikbaar is.
+
+Daarna volgen f regels met de afstand en het aantal passagiers voor elke vlucht.
+De afstand en het aantal passagiers zijn gehele getallen die minstens ´e´en
+zijn. De maximum afstand voor een vlucht is 20000 en het maximum aantal
+passagiers per vlucht is 1000.
+
+Daarna volgen p regels met daarop het bereik en het aantal beschikbare plaatsen
+voor elk vliegtuig. Het bereik en het aantal beschikbare plaatsen hebben
+dezelfde restricties als respectievelijk de afstand en het aantal passagiers op
+een vlucht.
+
+Alle getallen in de invoer die op dezelfde regel voorkomen, worden gescheiden
+door 1 enkele spatie; alle regels worden be¨eindigd met een enkele newline.
+
+Uitvoer
+
+De uitvoer bestaat uit n regels met daarop eerst het volgnummer van het
+testgeval (begin te tellen bij 1, oplopend tot n), daarna een spatie en daarna
+voor het testgeval de minimale extra kost om alle vluchten uit te voeren. Indien
+de vluchten niet kunnen uitgevoerd worden met de gegeven vliegtuigen schrijf dan
+geen oplossing uit na het volgnummer van het testgeval.
+
+Let op! Zorg ervoor dat je uitvoer geen overbodige tekens bevat, bijvoorbeeld
+een spatie op het einde van een regel of een lege regel op het einde van de
+uitvoer. Dat zorgt er immers voor dat je uitvoer als foutief wordt beschouwd.
+
+Voorbeeld
+
+Invoer
+
+3
+2 1
+2018 320
+6354 450
+8000 500
+1 2
+7067 600
+8000 500
+5000 800
+2 2
+3054 300
+6780 480
+8000 500
+4000 370
+
+Uitvoer
+
+1 geen oplossing
+2 geen oplossing
+3 349380
